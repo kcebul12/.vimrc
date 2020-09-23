@@ -26,6 +26,10 @@ Plugin 'google/yapf'
 Plugin 'pylint.vim'
 " Git tool
 Plugin 'tpope/vim-fugitive'
+" NerdTREE file system explorer
+Plugin 'scrooloose/nerdtree'
+" Nerdcommenter
+Plugin 'scrooloose/nerdcommenter'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,6 +49,7 @@ syntax on
 
 let g:gruvbox_contrast_dark='hard'
 autocmd vimenter * colorscheme gruvbox
+autocmd vimenter * NERDTree
 let mapleader = " "
 set modelines=0
 set number
